@@ -1,0 +1,40 @@
+services:
+  backend:
+    build: .
+    container_name: mediquerynow-backend
+    restart: unless-stopped
+    environment:
+      LLM_PROVIDER: ${LLM_PROVIDER:-offline}
+      JWT_SECRET: ${JWT_SECRET:-replace-this-secret}
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+      ALLOW_LEGACY_DEMO_HEADERS: ${ALLOW_LEGACY_DEMO_HEADERS:-false}
+      AWS_REGION: ${AWS_REGION:-us-east-1}
+      BEDROCK_MODEL_ID: ${BEDROCK_MODEL_ID:-us.meta.llama3-3-70b-instruct-v1:0}
+      LM_STUDIO_BASE_URL: ${LM_STUDIO_BASE_URL:-http://host.docker.internal:1234/v1}
+      LM_STUDIO_MODEL_NAME: ${LM_STUDIO_MODEL_NAME:-local-model}
+      AUDIT_LOG_PATH: /app/runtime/audit_log.json
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Admin@123}
+      PROVIDER_PASSWORD: ${PROVIDER_PASSWORD:-Provider@123}
+      PATIENT_PASSWORD: ${PATIENT_PASSWORD:-Patient@123}
+      INSURER_PASSWORD: ${INSURER_PASSWORD:-Insurer@123}
+    volumes:
+      - chroma_data:/app/vector_embedding/chroma_db
+      - audit_data:/app/runtime
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: /api
+    container_name: mediquerynow-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "${APP_PORT:-8080}:80"
+
+volumes:
+  chroma_data:
+  audit_data:

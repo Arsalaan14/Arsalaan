@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.git/
+frontend/node_modules/
+frontend/dist/
+.env
+vector_embedding/chroma_db/
