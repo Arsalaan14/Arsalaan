@@ -1,4 +1,4 @@
-"""Central configuration for MediQueryNow."""
+"""Central configuration for MedNova."""
 import os
 from pathlib import Path
 
