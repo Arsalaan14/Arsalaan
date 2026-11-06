@@ -12,7 +12,7 @@ logger = logging.getLogger("main")
 
 def print_banner():
     print("=" * 80)
-    print(" " * 20 + "Patient Health Record Assistant")
+    print(" " * 20 + "MedNova")
     print("=" * 80)
     print("Type your question.")
     print("\nExamples:")
@@ -76,7 +76,7 @@ def main():
         logger.error(f"Initialization failed: {e}")
         sys.exit(1)
         
-    print("\n[INFO] Starting Patient Health Record Assistant...")
+    print("\n[INFO] Starting MedNova...")
     print("\n[INFO] Warming up LLM...")
     pipeline.generator.generate("Hello", "Context: None")
     print("[✓] LLM Warm-Up Completed\n")
