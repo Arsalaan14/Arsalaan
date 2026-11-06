@@ -1,7 +1,7 @@
 services:
   backend:
     build: .
-    container_name: mediquerynow-backend
+    container_name: mednova-backend
     restart: unless-stopped
     environment:
       LLM_PROVIDER: ${LLM_PROVIDER:-offline}
@@ -28,7 +28,7 @@ services:
       context: ./frontend
       args:
         VITE_API_BASE_URL: /api
-    container_name: mediquerynow-frontend
+    container_name: mednova-frontend
     restart: unless-stopped
     depends_on:
       - backend
