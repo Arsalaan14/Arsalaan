@@ -2,12 +2,12 @@ import sys
 import json
 import traceback
 
-sys.path.append("c:/Users/navee/Desktop/mock_hack/CTS-Hackathon/vector_embedding")
+sys.path.append("C:\Users\acer\Desktop\Final Year Project\vector_embedding")
 import normalization
 
 def main():
-    input_file = "c:/Users/navee/Desktop/mock_hack/CTS-Hackathon/data/patient_records_messy.json"
-    output_file = "c:/Users/navee/Desktop/mock_hack/CTS-Hackathon/data/patient_records_normalized_test.json"
+    input_file = "C:\Users\acer\Desktop\Final Year Project\patient_records_messy.json"
+    output_file = "C:\Users\acer\Desktop\Final Year Project\patient_records_normalized_test.json"
     
     try:
         print("Starting normalization...")
