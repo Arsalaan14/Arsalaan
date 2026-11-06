@@ -1,6 +1,6 @@
-# MediQueryNow — RAG-Based Clinical Information Retrieval Platform
+# MedNova - New Age Healthcare Intelligence — RAG-Based Clinical Information Retrieval Platform
 
-MediQueryNow is a final-year full-stack healthcare information-retrieval project that combines semantic search, structured filtering, role-based access control, audit logging, and optional large-language-model generation.
+MedNova is a final-year full-stack healthcare information-retrieval project that combines semantic search, structured filtering, role-based access control, audit logging, and optional large-language-model generation.
 
 > **Safety:** This is an academic/research information-retrieval system. It is not a medical device, diagnostic engine, or replacement for a qualified healthcare professional. The included dataset is synthetic/demo data.
 
