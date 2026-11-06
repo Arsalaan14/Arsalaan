@@ -1,4 +1,4 @@
-# MediQueryNow — Official Demonstration Guide
+# MedNova - New Age Healthcare Intelligence — Official Demonstration Guide
 
 ## 1. Start the application
 
@@ -123,4 +123,4 @@ docker compose down -v
 
 ## 7. Important academic disclaimer
 
-MediQueryNow is an academic clinical-information retrieval prototype. It is not a medical device, diagnostic system, or substitute for qualified clinical judgment. Demonstration data is synthetic.
+MedNova is an academic clinical-information retrieval prototype. It is not a medical device, diagnostic system, or substitute for qualified clinical judgment. Demonstration data is synthetic.
