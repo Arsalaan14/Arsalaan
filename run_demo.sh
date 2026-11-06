@@ -21,11 +21,11 @@ if [ ! -f .env ]; then
 fi
 
 export APP_PORT="${APP_PORT:-8080}"
-echo "Starting MediQueryNow demo..."
+echo "Starting MedNova demo..."
 docker compose up --build -d
 
 echo
-echo "MediQueryNow is starting at: http://localhost:${APP_PORT}"
+echo "MedNova is starting at: http://localhost:${APP_PORT}"
 echo "Demo users are listed in DEMO_GUIDE.md"
 echo
 echo "To stop: docker compose down"
