@@ -1,6 +1,6 @@
 # Database / Vector Index Migration
 
-MediQueryNow uses ChromaDB for the semantic retrieval index. The source of truth for the academic demo is `data/patient_records_50.json`.
+MedNova uses ChromaDB for the semantic retrieval index. The source of truth for the academic demo is `data/patient_records_50.json`.
 
 To rebuild the index:
 
