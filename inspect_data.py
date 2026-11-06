@@ -1,6 +1,6 @@
 import json
 
-with open("d:/Code_wid_pablo/CTS-Hackathon/data/patient_records_50.json", "r") as f:
+with open(C:\Users\acer\Desktop\Final Year Project\inspect_data.json", "r") as f:
     data = json.load(f)
 
 for p in data["patients"]:
