@@ -183,6 +183,6 @@ if __name__ == "__main__":
     patients = [generate_messy_patient(i) for i in range(1, 101)]
     output_data = {"patients": patients}
     
-    with open("c:/Users/navee/Desktop/mock_hack/CTS-Hackathon/data/patient_records_messy.json", "w", encoding="utf-8") as f:
+    with open("C:\Users\acer\Desktop\Final Year Project\generate_messy_dataset.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2)
     print("Generated 100 messy patient records successfully!")
