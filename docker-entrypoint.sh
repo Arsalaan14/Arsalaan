@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
-echo "== MediQueryNow backend startup =="
+echo "== MedNova backend startup =="
 mkdir -p /app/vector_embedding/chroma_db /app/data /app/runtime
 python - <<'PY'
 import os
